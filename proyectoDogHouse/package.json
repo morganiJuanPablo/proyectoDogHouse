@@ -1,0 +1,11 @@
+{
+  "name": "proyectodoghouse",
+  "version": "1.0.0",
+  "description": "SEGUNDA pre-entrega.\r CODERHOUSE cursado Java Script comisión 51360.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

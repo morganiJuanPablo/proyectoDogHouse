@@ -1,0 +1,131 @@
+body {
+    main {
+        #hacerReserva {
+            width: 100%;
+            height: 100vh;
+            background-color: $backgroundCrema;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .perritosReserva {
+                padding-right: 5rem;
+                padding-top: 5rem;
+            }
+
+            .contenedorFormularioReserva {
+                background-color: white;
+                border-radius: 5rem;
+                width: 50rem;
+                height: 48rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .formularioReserva {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    gap: 3rem;
+                    width: 42rem;
+                    align-content: center;
+                    align-items: start;
+                    padding-top: 5rem;
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 1rem;
+
+                        label {
+                            font-family: "Ubuntu regular";
+                            font-size: 2rem;
+                            color: $greyColor;
+
+                        }
+
+                        input {
+                            @include estiloInputComunidad;
+                            padding: 0;
+                            text-align: center;
+                            margin-top: 1rem;
+                            width: 12rem;
+                        }
+                    }
+
+                    .servicioPeluqueria {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1rem;
+
+                        .tituloPeluqueria {
+                            font-family: "Ubuntu regular";
+                            font-size: 2rem;
+                            color: $greyColor;
+
+                        }
+
+                        #agregoPeluqueria {
+                            width: 2.2rem;
+                            height: 2.2rem;
+                            border-style: none;
+                            background-color: white;
+                            cursor: pointer;
+                        }
+
+                        #agregoPeluqueria:hover {
+                            opacity: 0.37;
+                            transition: 0.35s ease;
+                        }
+                    }
+
+                    .servicioVeterinaria {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1rem;
+
+                        .tituloVeterinaria {
+                            font-family: "Ubuntu regular";
+                            font-size: 2rem;
+                            color: $greyColor;
+
+                        }
+
+                        #agregoVeterinaria {
+                            width: 2.2rem;
+                            height: 2.2rem;
+                            border-style: none;
+                            background-color: white;
+                            cursor: pointer;
+                        }
+
+                        #agregoVeterinaria:hover {
+                            opacity: 0.37;
+                            transition: 0.35s ease;
+                        }
+                    }
+                }
+
+                #enviarReserva {
+                    @include botonEnviar;
+                    margin-top: 4rem;
+                }
+
+
+
+            }
+        }
+    }
+}
+
+.peluqueriaAñadida {
+    font-family: "Ubuntu Medium";
+    font-size: 2rem;
+    border-radius: 5rem;
+    margin-bottom: 10vh;
+    text-align: center;
+}

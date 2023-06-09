@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>dogHouse</title>
+    <link rel="shortcut icon" href="./assets/logoNavegador.png">
+
+</head>
+
+<body id="ancla">
+    <header>
+        <div>
+            <img src="./assets/logoHeader.svg" alt="Logo Dog House">
+        </div>
+        <nav>
+            <ul class="navPaginas">
+                <li><a href="#ancla" title="Ir a Inicio">Inicio</a></li>
+                <li><a href="#ancla1" title="Ir a Nosotros">Nosotros</a></li>
+                <li><a href="#ancla2" title="Ir a Servicios">Servicios</a></li>
+                <li><a href="#ancla3" title="Ir a Comunidad">Comunidad</a></li>
+            </ul>
+            <ul class="navIconos">
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="./assets/instagram.svg"
+                            alt="Ir a Instagram"></a></li>
+                <!-- <li><a href=""><img src="./assets/bolsitaCompras.svg" alt="Español"></a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionInicio">
+            <div class="ordenA">
+                <img class="imgInicio" src="./assets/perritoInicio.png" alt="Inicio Perrito">
+            </div>
+            <div class="ordenB">
+                <h1>
+                    <i>¿En cuál provincia<br>de España vives?</i>
+                </h1>
+                <form action="" id="formInicio">
+                    <input type="text" id="ciudadUsuario">
+                    <button type="submit"><img src="./assets/lupita.svg" alt="Buscar sucursales"></button>
+                </form>
+            </div>
+        </section>
+        <section class="sectionNosotros" id="ancla1">
+            <div>
+                <img src="./assets/fondoSectionNosotros.png" alt="">
+            </div>
+            <h2><i>Perros bien cuidados.<b> Perros felices.</b></i></h2>
+            <p><b>Desde 2016, comenzamos en Madrid esta hermosa aventura.</b> Cuidar de los mejores amigos que podemos
+                tener, ofreciendoles actividades al aire libre en nuestros jardines, cuidados veterinarios, juegos
+                recreativos, paseos, y por supuesto, mucho amor. Desde entonces nos hemos expandido por varias ciudades
+                de España con el objetivo de seguir creciendo y sobre todo, seguir jugando con ellos. Conoce nuestras
+                instalaciones en nuestro Instagram!</p>
+        </section>
+        <section class="sectionServicios" id="ancla2">
+            <div class="contenedorCards" id="contenedorCards">
+            </div>
+            <button type="submit" id="reservarAhora"> <a href="#hacerReserva"><b>¡Reserva ahora!</b></a> </button>
+        </section>
+        <section class="sectionComunidad" id="ancla3">
+            <p>Recibe en tu correo todas las novedades sobre el cuidado de tu mascota, alimentación, consejos para su
+                cuidado. Info sobre exposiciones, eventos y muchas promos y cupones de descuento en el precio de
+                cualquiera de nuestros servicios.<br><br><b>TE INVITAMOS A FORMAR PARTE DE NUESTRA COMUNIDAD!</b></p>
+            <div>
+                <form action="" class="orden1">
+                    <label for="comunidadNombreUsuario">Nombre y Apellido</label><input type="text"
+                        id="comunidadNombreUsuario" />
+                </form>
+                <form action="" class="orden2">
+                    <label for="comunidadNombreMascota">Nombre de tu mascota</label><input type="text"
+                        id="comunidadNombreMascota" />
+                </form>
+                <form action="" class="orden3">
+                    <label for="comunidadCiudadUsuario">Ciudad en la que vives</label><input type="text"
+                        id="comunidadCiudadUsuario" />
+                </form>
+                <form action="" class="orden4">
+                    <label for="comunidadEdadMascota">Edad (años)</label><input type="number"
+                        id="comunidadEdadMascota" />
+                </form>
+                <form action="" class="orden5">
+                    <label for="comunidadMailUsuario">E-mail</label><input type="email" id="comunidadMailUsuario" />
+                </form>
+                <form action="" class="orden6">
+                    <label for="comunidadRazaMascota">Raza</label><input type="text" id="comunidadRazaMascota" />
+                </form>
+
+            </div>
+            <div class="condicionesComunidad">
+                <input type="radio" name="condiciones" id="aceptoCondiciones" value="condiciones">
+                <label for="aceptoCondiciones">Acepto todos los términos y condiciones. Puedes leerlos <a
+                        href=""><b>aquí.</b></a></label>
+            </div>
+            <button type="submit" id="enviarComunidad">Enviar</button>
+        </section>
+        <div id="hacerReserva">
+            <img class="perritosReserva" src="./assets/perritosReserva.png" alt="Haz tu reserva!">
+            <div class="contenedorFormularioReserva">
+                <div class="formularioReserva">
+                    <form action="" method="post">
+                        <label for="horasGuarderia">Guardería: Cantidad de horas</label>
+                        <input type="number" id="horasGuarderia" />
+                    </form>
+                    <div class="servicioPeluqueria">
+                        <p class="tituloPeluqueria"> Peluquería canina |</p>
+                        <button id="agregoPeluqueria"><img src="./assets/btnAgregarServicios.svg"
+                                alt="Agregar Servicio de Peluquería"></button>
+                    </div>
+
+                    <div class="servicioVeterinaria">
+                        <p class="tituloVeterinaria">Servicio veterinario |</p><br>
+                        <button id="agregoVeterinaria"><img src="./assets/btnAgregarServicios.svg"
+                                alt="Agregar Servicio de Veterinaria"></button>
+                    </div>
+
+                    <form action="" method="post">
+                        <label for="codigoDescuento">¿Tienes código de descuento?</label>
+                        <input type="text" id="codigoDescuento" />
+                    </form>
+                </div>
+                <button type="submit" id="enviarReserva">Enviar</button>
+            </div>
+        </div>
+        <div id="padreSeccionConfirmarReserva">
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/javaScript.js"></script>
+</body>
+
+</html>

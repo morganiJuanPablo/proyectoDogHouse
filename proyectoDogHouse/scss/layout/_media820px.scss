@@ -1,0 +1,76 @@
+@media(max-width:820px) {
+    body {
+        main {
+            .sectionServicios {
+                background-color: $colorInstitucional;
+                width: 100%;
+                height: 300vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+
+                .contenedorCards {
+                    width: 90%;
+                }
+            }
+
+            .sectionComunidad {
+                width: 100%;
+                height: 200vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5rem;
+                padding-top: 5rem;
+
+                div {
+                    .orden1 {
+                        order: 1;
+                    }
+
+                    .orden2 {
+                        order: 4;
+                    }
+
+                    .orden3 {
+                        order: 2;
+                    }
+
+                    .orden4 {
+                        order: 5;
+                    }
+
+                    .orden5 {
+                        order: 3;
+                    }
+
+                    .orden6 {
+                        order: 6;
+                    }
+                }
+            }
+
+            #hacerReserva {
+                width: 100%;
+                height: 150vh;
+            }
+
+        }
+
+    }
+
+    .modalReservaCancelada {
+        background-color: red;
+        height: 80rem;
+        width: 80%;
+    }
+
+    .swal2-popup {
+        background-color: $colorInstitucional;
+        width: 80%;
+        height: 70vh;
+        border-radius: 5rem;
+    }
+}

@@ -1,0 +1,38 @@
+
+.swal2-popup {
+    background-color: $colorInstitucional;
+    width:55%;
+    height: 70vh;
+    border-radius: 5rem;
+    
+    .swal2-icon {
+        scale: 250%;   
+        margin-top: 9rem;
+    }   
+    .swal2-title {
+        font-family: "Ubuntu";
+        font-size: 4rem;
+        color: white;        
+    }
+    .swal2-html-container{
+        font-family: "Ubuntu";
+        font-size: 2.2rem;
+        color: white;
+        text-align: center;
+        padding: 0 5rem 0 5rem;
+        
+    }
+    .swal2-confirm{
+        border-color: white;
+        border-style:solid;
+        width: 12rem;
+        height: 4.4rem;
+        border-radius: 5rem;
+        background-color: $colorInstitucional;
+        font-size: 2.1rem;
+        color: white;    
+        font-family: "Ubuntu semibold";        
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+}

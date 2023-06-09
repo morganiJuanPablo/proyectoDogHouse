@@ -1,0 +1,95 @@
+body {
+    main {
+        .sectionComunidad {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            padding-top: 3rem;
+
+            p {
+                font-family: "Ubuntu regular";
+                font-size: 1.8rem;
+                color: $greyColor;
+                text-align: center;
+                width: 68rem;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+                width: 45%;
+                padding-top: 3rem;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    align-items: start;
+
+                    label {
+                        font-family: "Ubuntu regular";
+                        font-size: 1.8rem;
+                        color: $greyColor;
+                        padding-left: 2rem;
+                    }
+
+                    input {
+                        @include estiloInputComunidad;
+                    }
+                }
+            }
+
+            .condicionesComunidad {
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                input {
+                    border-style: none;
+                    size: 1rem;
+                }
+
+                label {
+                    font-family: "Ubuntu regular";
+                    font-size: 1.5rem;
+                    color: $greyColor;
+
+                    a {
+                        text-decoration: none;
+                        color: $greyColor;
+                    }
+                }
+            }
+
+            button {
+                @include botonEnviar;
+
+            }
+
+        }
+
+    }
+}
+
+.avisoCheckFalse {
+    font-family: "Ubuntu Medium";
+    font-size: 2rem;
+    border-radius: 5rem;
+    margin-top: 85vh;
+}
+
+.saludoBienvenida {
+    font-family: "Ubuntu Medium";
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5rem;
+    margin-top: 40vh;
+    padding: 2rem 3rem 3rem 3rem;
+
+}

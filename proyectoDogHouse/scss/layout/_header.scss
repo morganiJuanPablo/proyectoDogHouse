@@ -1,0 +1,45 @@
+body {
+
+    header {
+        width: 100%;
+        height: 14rem;
+        background-color: $backgroundCrema;
+        @include flex-row-wrap;
+        z-index: 6;
+        gap: 4rem;
+        align-content: center;
+        justify-content: center;
+        position: sticky;
+        left: 0px;
+        top: 0px;
+
+        nav {
+            @include flex-row-wrap;
+            align-items: center;
+
+            .navPaginas {
+                @include flex-row-wrap;
+                font-family: "Ubuntu Medium";
+                font-size: 1.8rem;
+                gap: 1.5rem;
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $greyColor;
+                    }
+                }
+            }
+
+            .navIconos {
+                @include flex-row-wrap;
+                align-items: end;
+                position: absolute;
+                right: 5rem;
+                list-style: none;
+                gap: 2rem;
+            }
+        }
+    }
+}

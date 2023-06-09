@@ -1,0 +1,114 @@
+body {
+    main {
+        .sectionServicios {
+            .contenedorCards {
+                .card1 {
+                    min-width: 20rem;
+                    max-width: 36rem;
+                    width: 100%;
+                    height: 62rem;
+                    background-color: $backgroundCrema;
+                    border-radius: 5rem;
+                    padding: 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        font-family: "Ubuntu light";
+                        font-size: 3rem;
+                        color: $greyColor;
+                    }
+
+                    div {
+                        background-color: white;
+                        padding: 2.5rem;
+                        width: 36rem;
+
+                        p {
+                            font-family: "Ubuntu regular";
+                            font-size: 1.8rem;
+                            color: $greyColor;
+                        }
+                    }
+
+                    .precioServicios {
+                        font-family: "Ubuntu regular";
+                        font-size: 3.2rem;
+                        color: $greyColor;
+                        margin-top: 3rem;
+                    }
+                }
+
+                .card2 {
+                    width: 36rem;
+                    height: 62rem;
+                    background-color: $backgroundCrema;
+                    border-radius: 5rem;
+                    padding: 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        font-family: "Ubuntu light";
+                        font-size: 3rem;
+                        color: $greyColor;
+                    }
+
+                    div {
+                        background-color: white;
+                        padding: 2.5rem;
+                        width: 36rem;
+
+                        p {
+                            font-family: "Ubuntu regular";
+                            font-size: 1.8rem;
+                            color: $greyColor;
+                        }
+                    }
+
+                    .precioServicios {
+                        font-family: "Ubuntu regular";
+                        font-size: 3.2rem;
+                        color: $greyColor;
+                        margin-top: 1.5rem;
+                    }
+                }
+
+                .card3 {
+                    width: 36rem;
+                    height: 62rem;
+                    background-color: $backgroundCrema;
+                    border-radius: 5rem;
+                    padding: 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        font-family: "Ubuntu light";
+                        font-size: 3rem;
+                        color: $greyColor;
+                    }
+
+                    div {
+                        background-color: white;
+                        padding: 2.5rem;
+                        width: 36rem;
+
+                        p {
+                            font-family: "Ubuntu regular";
+                            font-size: 1.8rem;
+                            color: $greyColor;
+                        }
+                    }
+
+                    .precioServicios {
+                        font-family: "Ubuntu regular";
+                        font-size: 3.2rem;
+                        color: $greyColor;
+                        margin-top: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
